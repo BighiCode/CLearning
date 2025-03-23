@@ -16,7 +16,9 @@ int IsEmpty(Lnode *list);
 
 Lnode *CreateNode(int value);
 
-Lnode SearchElementNode(Lnode *list, int value);
+void *InsertNodeInTheList(Lnode **head, Lnode *no);
+
+Lnode *SearchElementNode(Lnode *list, int value);
 
 Lnode SearchElementNodeByPosition(Lnode *list, int position);
 
