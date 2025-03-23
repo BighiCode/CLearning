@@ -16,5 +16,3 @@
 ### 📌 Linguagens Usadas
 ![Linguagens](https://github-readme-stats.vercel.app/api/top-langs/?username=BighiCode&repo=CLearning&layout=compact&theme=dark)
 
-### 📦 Estatísticas do Código
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=BighiCode&show_icons=true&theme=dark&count_private=true)
