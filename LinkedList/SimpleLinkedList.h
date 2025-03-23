@@ -20,7 +20,7 @@ void *InsertNodeInTheList(Lnode **head, Lnode *no);
 
 Lnode *SearchElementNode(Lnode *list, int value);
 
-Lnode SearchElementNodeByPosition(Lnode *list, int position);
+Lnode *SearchElementNodeByPosition(Lnode *list, int position);
 
 Lnode InsertInPositionX(Lnode **list, Lnode *newNode, int postion);
 

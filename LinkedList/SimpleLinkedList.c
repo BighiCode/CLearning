@@ -26,7 +26,7 @@ void *InsertNodeInTheList(Lnode **head, Lnode *no){
         {
             aux = aux->prox;
         }
-        no = aux->prox;
+        aux->prox = no;
     }
 }
 
@@ -40,7 +40,24 @@ Lnode *SearchElementNode(Lnode *list, int value){
         aux = aux->prox;
     }
 
-    printf("elemento não encontrado");
+    printf("Element not found");
     return NULL;
+
+}
+
+Lnode *SearchElementNodeByPosition(Lnode *list, int position){
+    Lnode *aux = list;
+
+    for(int i = 1; i < position; i++){
+        if(aux != NULL){
+            aux = aux->prox;
+        }else{
+            printf("\nElement do not exist");
+            return NULL;
+        }
+    }
+
+    return aux;
+
 
 }
