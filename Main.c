@@ -1,4 +1,4 @@
-#include "LinkedList/SimpleLinkedList.h"
+#include "LinkedList/API.h"
 #include "Tree/Tree.h"
 #include "Pile/Pile.h"
 

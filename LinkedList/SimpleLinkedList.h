@@ -10,7 +10,6 @@ typedef struct NODE
     struct NODE* prox;
 } Lnode;
 
-
 Lnode *CreateList();
 
 int IsEmpty(Lnode *list);
