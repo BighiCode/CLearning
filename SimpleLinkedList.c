@@ -4,7 +4,7 @@ Lnode *CreateList(){
     return NULL;
 }
 
-int IsEmpty(Lnode *list){
+int IsEmptyList(Lnode *list){
     return list == NULL ? 1 : 0;
 }
 
@@ -18,7 +18,7 @@ Lnode *CreateNode(int value){
 }
 
 void *InsertNodeInTheList(Lnode **head, Lnode *no){
-    if(IsEmpty(*head) == 1){
+    if(IsEmptyList(*head) == 1){
         *head = no;
     }else{
         Lnode *aux = *head;
@@ -32,7 +32,7 @@ void *InsertNodeInTheList(Lnode **head, Lnode *no){
 
 Lnode *SearchElementNode(Lnode *list, int value){
     Lnode *aux = list;
-    if(IsEmpty(list) == 0){
+    if(IsEmptyList(list) == 0){
       
     while (aux != NULL)
     {
@@ -58,7 +58,7 @@ Lnode *SearchElementNode(Lnode *list, int value){
 }
 
 Lnode *SearchElementNodeByPosition(Lnode *list, int position){
-    if(IsEmpty(list) == 1){
+    if(IsEmptyList(list) == 1){
         printf("\nList is empty\n");
         return NULL;
     }else{
@@ -119,7 +119,7 @@ Lnode *RemovePosition(Lnode **list, int position){
 }
 
 void PrintList(Lnode *list){
-    if(IsEmpty(list) == 0){
+    if(IsEmptyList(list) == 0){
         Lnode *aux = list;
         printf("\nList:\n");
         while(aux != NULL)

@@ -12,7 +12,7 @@ typedef struct NODE
 
 Lnode *CreateList();
 
-int IsEmpty(Lnode *list);
+int IsEmptyList(Lnode *list);
 
 Lnode *CreateNode(int value);
 
