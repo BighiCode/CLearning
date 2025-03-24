@@ -1,18 +1,18 @@
 #include "LAPI.h"
 #include "QAPI.h"
+#include "TAPI.h"
 
 int main(){
     
-    queue = malloc(sizeof(Queue));
-    Inicialize(queue);
-    
-    for(int i = 0; i<10; i ++){
-        Enqueue(queue,i);
-    }
+    root = createTree();
 
-    //DestructQueue(queue);
+    root = insertTree(root,2);
+    root = insertTree(root,2);
+    root = insertTree(root,2);
+    root = insertTree(root,2);
+    root = insertTree(root,2);
 
-    PrintAllElements(queue);
+    printInOrder(root);
 
     return 0;
 }

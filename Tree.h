@@ -12,7 +12,7 @@ typedef struct NodeTREE
 }NodeTree;
 
 NodeTree *createTree();                            // Initializes an empty tree
-NodeTree *insert(NodeTree *root, int value);     // Inserts an element into the tree
+NodeTree *insertTree(NodeTree *root, int value);     // Inserts an element into the tree
 NodeTree *removeNode(NodeTree *root, int value); // Removes an element from the tree
 NodeTree *search(NodeTree *root, int value);     // Searches for an element in the tree
 int getHeight(NodeTree *root);                     // Returns the tree height
