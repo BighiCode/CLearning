@@ -22,7 +22,7 @@ Lnode *SearchElementNode(Lnode *list, int value);
 
 Lnode *SearchElementNodeByPosition(Lnode *list, int position);
 
-Lnode InsertInPositionX(Lnode **list, Lnode *newNode, int postion);
+int InsertInPositionX(Lnode **list, Lnode *newNode, int postion);
 
 Lnode *RemovePosition(Lnode **list, int position);
 
